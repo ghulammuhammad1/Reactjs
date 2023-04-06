@@ -11,45 +11,22 @@ function TableComponenet(props) {
                 <thead>
                     <tr>
                         <th scope="col" onClick={clickHandler}>#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
+                    {props.items.map((item,index)=>{
+                        return(<tr id={index}>
+                            <th scope="row">{index+1}</th>
+                            <td>{item.name}</td>
+                            <td>{item.quantity}</td>
+                            <td>{item.price}</td>
+                        </tr>)
+                    
+                    })}
+                    
                 </tbody>
             </table>
         </div>
