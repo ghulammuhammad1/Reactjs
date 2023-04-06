@@ -1,0 +1,13 @@
+1. download nodejs and install it
+2. Download ide like vscode
+3. Create and install react
+	-npm install -g create-react-app
+	-create-react-app --version
+	-create-react-app myapp
+
+
+
+Changing git account: // install gitkraken
+	-git config user.name
+	-git config --global user.name "ghulammuhammad1"
+	-git config --global user.email "ghulammuhammad.cs17@iba-suk.edu.pk"
